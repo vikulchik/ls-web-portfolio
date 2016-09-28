@@ -1,0 +1,30 @@
+.welcome.authorization
+    form(method="POST").authorization_form
+        .authorization_block
+            h3.portfolio-content Авторизуйтесь
+            label.authorization_label
+                input(type="text" name="text" placeholder="Логин" required).authorization_input.login
+                +icon("login")
+            label.authorization_label
+                input(type="password" name="password" placeholder="Пароль" required).authorization_input.password
+                +icon("password")
+            label.authorization_people Я человек
+                input(type="checkbox" name="checkbox").authorization_chekbox
+                span.authorization_span
+            span.main-text.authorization_text Вы точно не робот?
+            label.main-text.authorization_confirmation Да
+                input(type="radio" name="radio").authorization_radio
+                span.authorization_span-confirmation
+            label.main-text.authorization_confirmation Не уверен
+                input(type="radio" name="radio").authorization_radio
+                span.authorization_span-confirmation
+        nav.navigation
+            - var array = ['На главную',  'Войти']
+            ul.navigation_list.authorization_list
+                each item in array
+                    li.navigation_item.authorization_item
+                        a(href="#").navigation_link= item
+
+
+
+
