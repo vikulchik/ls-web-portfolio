@@ -1,0 +1,19 @@
+extends ../_template
+include ../mixins/icons
+
+block variables
+    - var title = 'Another page'
+
+block content
+    .wrapper.wrapper-main
+        include ../common/_header
+        .about-me
+            .about-me_info
+                .my-photo
+                    img(src="/assets/img/photo.jpg").my-photo_img
+                h2.main-description Виктория Коваленко
+                span.main-text Личный сайт веб разработчик
+    .work
+        h1.portfolio-content.container_description Мои работы
+        .container_header
+            +icon("works_header")
