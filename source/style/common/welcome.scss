@@ -104,16 +104,14 @@
 }
 
 .main-authorization {
-  width: 180px;
-  height: 45px;
   padding: 20px;
-  position: absolute;
-  top: 0;
-  right: 0;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .main-authorization_button {
   color: #ffffff;
+  width: 180px;
   padding: 15px 25px;
   border: 1px solid #ffffff;
   border-radius: 25px;
@@ -121,6 +119,7 @@
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
+  box-sizing: border-box;
 
   &:hover {
     background: #4e8839;

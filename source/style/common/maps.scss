@@ -1,0 +1,49 @@
+.maps {
+  height: 975px;
+  position: relative;
+}
+
+.maps_contacts {
+  width: 380px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%)translateY(-50%);
+  background: rgba(228, 233, 222, 0.8);
+  border-radius: 5px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.maps_item {
+  list-style-type: none;
+  margin-bottom: 30px;
+
+  .icon {
+    fill: #6c9c5a;
+    width: 28px;
+    height: 22px;
+    position: absolute;
+    left: -1px;
+    top: 0;
+  }
+}
+
+.maps_link {
+  padding-left: 40px;
+  text-decoration: none;
+  color: #6f7e82;
+  font-weight: 500;
+  position: relative;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.maps_footer{
+  padding: 10px 10px 15px 10px;
+  background: rgba(50%, 66%, 44%, 0.7);
+  position: relative;
+  bottom: 214px;
+}
