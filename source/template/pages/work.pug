@@ -2,7 +2,7 @@ extends ../_template
 include ../mixins/icons
 
 block variables
-    - var title = 'Another page'
+    - var title = 'My Work'
 
 block content
     .wrapper.wrapper-main
@@ -10,10 +10,70 @@ block content
         .about-me
             .about-me_info
                 .my-photo
-                    img(src="/assets/img/photo.jpg").my-photo_img
+                    img(src="/assets/img/photo.jpg" alt="my photo").my-photo_img
                 h2.main-description Виктория Коваленко
                 span.main-text Личный сайт веб разработчик
+        a(href="#").main-arrow
+            +icon('portf_arrow_down')
+        //.box
+            +icon('bg')
     .work
         h1.portfolio-content.container_description Мои работы
         .container_header
             +icon("works_header")
+    .slider
+        ul.slider_list
+            li.slider_item
+                .slider_img
+                    img(src="/assets/img/1200_forest_about.jpg" alt="").slider_image
+                    img(src="/assets/img/1200_forest_blog.jpg" alt="").slider_image-other
+                .slider_info
+                    .slider_info-value
+                        h3.portfolio-content.slider_description Портфолио
+                        span.slider_skills html, css, javascript
+                        a(href="http://nikulchik.rubets.pro/" target="_blank").slider_button Посмотреть сайт
+                            +icon('link')
+        a(href="#").slider_arrow.slider_arrow-prew
+             +icon('portf_arrow_down')
+        a(href="#").slider_arrow.slider_arrow_next
+             +icon('portf_arrow_up')
+    .what-about
+        h1.portfolio-content.container_description.what-about_text Что говорят обо мне
+             +icon("about_header")
+        .reviews
+            .reviews_content
+                .reviews_user
+                    img(src="/assets/img/dima.png" alt="dima kovalchuk").reviews_photo
+                p.reviews_text.
+                    Эта девушка проходила обучение веб-разработке не где-то,
+                    а в LoftSchool! 2 месяца только самых тяжелых испытаний и
+                    бессонных ночей!
+                p.reviews_name.
+                    Ковальчук Дмитрий
+                    <span class="span">— основатель Loftschool</span>
+            .reviews_content
+                .reviews_user
+                    img(src="/assets/img/zar.png" alt="zar zakharov").reviews_photo
+                p.reviews_text.
+                    Эта девушка проходила обучение веб-разработке не где-то,
+                    а в LoftSchool! 2 месяца только самых тяжелых испытаний и
+                    бессонных ночей!
+                p.reviews_name.
+                    Зар Захаров
+                    <span class="span"> — преподаватель</span>
+        form(method="POST").call-me
+            .call-me_content
+                h3.portfolio-content.container_public Связаться со мной
+                input(type="text" name="text" placeholder="Имя" required).authorization_input.call-me_input
+                input(type="password" name="password" placeholder="Email" required).authorization_input.call-me_input
+                textarea(name="message" placeholder="Ваше сообщение").call-me_message
+            nav.navigation
+                - var array = ['Отправить',  'Очистить']
+                ul.navigation_list.authorization_list
+                    each item in array
+                        li.navigation_item.authorization_item
+                            a(href="#").navigation_link= item
+        include ../common/_footer
+        .footer_copyright.maps_footer
+             p.footer_copyright-value &copy; Владимир Астахов | Создано с любовью в LoftSchool | 2016
+

@@ -8,10 +8,27 @@
   height: 82%;
 }
 
-/*.icon-box {
-  margin: 50px auto;
+.icon-box {
   position: absolute;
   bottom: 0;
+  height: 100px;
+  width: 500px;
+}
+
+.main-arrow {
+  width: 27px;
+  height: 17px;
+  display: block;
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  .icon {
+    width: 100%;
+    height: 100%;
+    fill: #c2d3c9;
+  }
 }
 
 .icon-box_right {
@@ -24,11 +41,15 @@
 
 .icon-about_bg_right{
     fill: #f8f9f5;
+    height: 100%;
+    width: 100%;
 }
 
 .icon-about_bg_left{
   fill: #ebefe2;
-}*/
+  height: 100%;
+  width: 100%;
+}
 
 .container {
   display: flex;
@@ -117,4 +138,81 @@
   font-size: 28px;
   color: #566358;
   font-weight: 500;
+}
+
+.skills_item {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 40px;
+  position: relative;
+
+  circle {
+    transition: stroke-dasharray .8s;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.skills_circles {
+  fill: none;
+  stroke-width: 20;
+
+}
+.skills_html {
+  stroke-dasharray: 290px  314px;
+}
+
+.sector {
+  stroke-dasharray: 314px 314px;
+}
+
+.skills_css {
+  stroke-dasharray: 290px 314px;
+}
+
+.skills_js {
+  stroke-dasharray: 150px 314px;
+}
+
+.skills_span {
+  color: #4e8839;
+  font-weight: 500;
+  font-size: 13px;
+  display: block;
+  width: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+}
+
+.skills_php {
+  stroke-dasharray: 20px 314px;
+}
+
+.skills_sql {
+  stroke-dasharray: 10px 314px;
+}
+
+.skills_npm {
+  stroke-dasharray: 100px 314px;
+}
+
+.skills_mongo {
+  stroke-dasharray: 15px 314px;
+}
+
+.skills_git {
+  stroke-dasharray: 230px 314px;
+}
+
+.skills_gulp {
+  stroke-dasharray: 200px 314px;
+}
+
+.skills_bower {
+  stroke-dasharray: 190px 314px;
 }

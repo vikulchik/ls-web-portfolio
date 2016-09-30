@@ -2,7 +2,7 @@ extends ../_template
 include ../mixins/icons
 
 block variables
-  - var title = 'Another page'
+  - var title = 'About Me'
 
 block content
     .wrapper.wrapper-main
@@ -10,13 +10,15 @@ block content
         .about-me
             .about-me_info
                 .my-photo
-                    img(src="/assets/img/photo.jpg").my-photo_img
+                    img(src="/assets/img/photo.jpg" alt="my photo").my-photo_img
                 h2.main-description Виктория Коваленко
                 span.main-text Личный сайт веб разработчик
+        a(href="#").main-arrow
+            +icon('portf_arrow_down')
         //.icon-box.icon-box_right
-           // +icon("about_bg_right")
+            +icon("about_bg_right")
         //.icon-box.icon-box_left
-           // +icon("about_bg_left")
+            +icon("about_bg_left")
     .container
         .container_left
             h1.portfolio-content.container_description Обо мне
@@ -41,8 +43,62 @@ block content
                 знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
             .skills
                 h4.skills_description Frontend
+                ul.skills_list
+                    li.skills_item
+                        svg( width="120" height="120" class="skills_circles")
+                            circle( r="50" cx="-60" cy="60" transform="rotate(-90)" stroke="#ccc" fill="none" class="sector")
+                            circle( r="50" cx="-60" cy="60" stroke="#74a163" transform="rotate(-90)" class="skills_html")
+                        span.skills_span HTML5
+                    li.skills_item
+                        svg( width="120" height="120" class="skills_circles")
+                            circle( r="50" cx="-60" cy="60" transform="rotate(-90)" stroke="#ccc" fill="none" class="sector")
+                            circle( r="50" cx="-60" cy="60" stroke="#74a163" transform="rotate(-90)" class="skills_css")
+                        span.skills_span CSS3
+                    li.skills_item
+                        svg( width="120" height="120" class="skills_circles")
+                            circle( r="50" cx="-60" cy="60" transform="rotate(-90)" stroke="#ccc" fill="none" class="sector")
+                            circle( r="50" cx="-60" cy="60" stroke="#74a163" transform="rotate(-90)" class="skills_js")
+                        span.skills_span JavaScript & Jquery
             .skills
                 h4.skills_description Backend
+                ul.skills_list
+                    li.skills_item
+                        svg( width="120" height="120" class="skills_circles")
+                            circle( r="50" cx="-60" cy="60" transform="rotate(-90)" stroke="#ccc" fill="none" class="sector ")
+                            circle( r="50" cx="-60" cy="60" stroke="#b1c2a4" transform="rotate(-90)" class="skills_php")
+                        span.skills_span PHP
+                    li.skills_item
+                        svg( width="120" height="120" class="skills_circles")
+                            circle( r="50" cx="-60" cy="60" transform="rotate(-90)" stroke="#ccc" fill="none" class="sector")
+                            circle( r="50" cx="-60" cy="60" stroke="#a0b991" transform="rotate(-90)" class="skills_sql")
+                        span.skills_span mySQL
+                    li.skills_item
+                        svg( width="120" height="120" class="skills_circles")
+                            circle( r="50" cx="-60" cy="60" transform="rotate(-90)" stroke="#ccc" fill="none" class="sector")
+                            circle( r="50" cx="-60" cy="60" stroke="#b7c6aa" transform="rotate(-90)" class="skills_npm")
+                        span.skills_span Node.js & npm
+                    li.skills_item
+                        svg( width="120" height="120" class="skills_circles")
+                            circle( r="50" cx="-60" cy="60" transform="rotate(-90)" stroke="#ccc" fill="none" class="sector")
+                            circle( r="50" cx="-60" cy="60" stroke="#9ab68b" transform="rotate(-90)" class="skills_mongo")
+                        span.skills_span Mongo.db
             .skills
                 h4.skills_description WorkFlow
+                ul.skills_list
+                    li.skills_item
+                        svg( width="120" height="120" class="skills_circles")
+                            circle( r="50" cx="-60" cy="60" transform="rotate(-90)" stroke="#ccc" fill="none" class="sector")
+                            circle( r="50" cx="-60" cy="60" stroke="#77a266" transform="rotate(-90)" class="skills_git")
+                        span.skills_span Git
+                    li.skills_item
+                        svg( width="120" height="120" class="skills_circles")
+                            circle( r="50" cx="-60" cy="60" transform="rotate(-90)" stroke="#ccc" fill="none" class="sector")
+                            circle( r="50" cx="-60" cy="60" stroke="#89ac79" transform="rotate(-90)" class="skills_gulp")
+                        span.skills_span Gulp
+                    li.skills_item
+                        svg( width="120" height="120" class="skills_circles")
+                            circle( r="50" cx="-60" cy="60" transform="rotate(-90)" stroke="#ccc" fill="none" class="sector")
+                            circle( r="50" cx="-60" cy="60" stroke="#9ab68b" transform="rotate(-90)" class="skills_bower")
+                        span.skills_span Bower
     include ../common/_maps
+
