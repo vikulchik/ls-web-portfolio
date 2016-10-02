@@ -10,11 +10,15 @@
 
 .hamburger {
   width: 40px;
+  height: 35px;
+}
+
+.hamburger_block {
   height: 5px;
+  display: block;
   background: #ffffff;
   position: relative;
   border-radius: 5px;
-  cursor: pointer;
 
   &:after {
     position: absolute;

@@ -4,8 +4,9 @@ html {
 body {
   margin: 0;
   font-family: 'Roboto-Regular', sans-serif;
-  height: 100%;
   font-size: 16px;
+  position: relative;
+  height: 100%;
 }
 
 .wrapper {
@@ -13,53 +14,10 @@ body {
   height: 100%;
   background: url("/assets/img/water.jpg") no-repeat 0 0;
   background-size: cover;
-  position: relative;
-
-  &:after {
-    position: absolute;
-    content: '';
-    border: 100px solid transparent;
-    border-bottom: 18px solid #ebefe1;
-    border-left: 577px solid #ebefe1;
-    bottom: 0;
-    left: 0;
-  }
-
-  &:before {
-    position: absolute;
-    content: '';
-    bottom: 0;
-    right: 0;
-    border: 100px solid transparent;
-    border-right: 579px solid #f4f5f0;
-    border-bottom: 20px solid #f4f5f0;
-  }
 }
 
 .wrapper-main {
-  position: relative;
-  display: block;
   min-height: 600px;
-
-  &:after {
-    position: absolute;
-    content: '';
-    border: 100px solid transparent;
-    border-bottom: 18px solid #f8f9f5;
-    border-left: 577px solid #f8f9f5;
-    bottom: 0;
-    left: 0;
-  }
-
-  &:before {
-    position: absolute;
-    content: '';
-    bottom: 0;
-    right: 0;
-    border: 100px solid transparent;
-    border-right: 579px solid #f8f9f5;
-    border-bottom: 20px solid #f8f9f5;
-  }
 }
 
 ul {

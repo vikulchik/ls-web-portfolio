@@ -1,4 +1,21 @@
 (function() {
+
+  // hamburger //
+
+  var hamburger = document.querySelector('.hamburger'),
+      nav = document.querySelector('.nav-box');
+  hamburger.addEventListener('click', function (e) {
+    e.preventDefault();
+    nav.classList.add('block');
+  });
+  document.querySelector('.nav-box_hamburger').addEventListener('click', function (e) {
+    e.preventDefault();
+    nav.classList.remove('block');
+  });
+
+  // end hamburger //
+  // map //
+
   var map;
   function initMap() {
     map = new google.maps.Map(document.getElementById('map'),
@@ -238,5 +255,7 @@
       }
     ]
   });
+
+  // end map //
 })();
 
