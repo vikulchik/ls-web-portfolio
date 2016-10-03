@@ -5,7 +5,7 @@ block variables
     - var title = 'My Work'
 
 block content
-    .wrapper.wrapper-main
+    section.wrapper.wrapper-main
         include ../common/_header
         .about-me
             .about-me_info
@@ -17,17 +17,19 @@ block content
             +icon('portf_arrow_down')
         //.box
             +icon('bg')
-    .work
+    section.work
+        +icon('bg')
         h1.portfolio-content.container_description Мои работы
         .container_header
             +icon("works_header")
-        +icon('bg')
-    .slider
+    section.slider
         ul.slider_list
             li.slider_item
                 .slider_img
-                    img(src="/assets/img/1200_forest_about.jpg" alt="").slider_image
-                    img(src="/assets/img/1200_forest_blog.jpg" alt="").slider_image-other
+                    .slider_first-img
+                        img(src="/assets/img/1200_forest_about.jpg" alt="").slider_image
+                    .slider_second-img
+                        img(src="/assets/img/1200_forest_blog.jpg" alt="").slider_image
                 .slider_info
                     .slider_info-value
                         h3.portfolio-content.slider_description Портфолио
@@ -38,7 +40,7 @@ block content
              +icon('portf_arrow_down')
         a(href="#").slider_arrow.slider_arrow_next
              +icon('portf_arrow_up')
-    .what-about
+    section.what-about
         h1.portfolio-content.container_description.what-about_text Что говорят обо мне
              +icon("about_header")
         .reviews
@@ -74,7 +76,7 @@ block content
                     each item in array
                         li.navigation_item.authorization_item
                             a(href="#").navigation_link= item
-        a(href="#").main-arrow
+        a(href="#").main-arrow.main-arrow-up
             +icon('portf_arrow_up')
         include ../common/_footer
         .footer_copyright.maps_footer
