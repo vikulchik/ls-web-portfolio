@@ -21,6 +21,7 @@ block content
         h1.portfolio-content.container_description Мои работы
         .container_header
             +icon("works_header")
+        +icon('bg')
     .slider
         ul.slider_list
             li.slider_item
@@ -73,7 +74,7 @@ block content
                     each item in array
                         li.navigation_item.authorization_item
                             a(href="#").navigation_link= item
-        a(href="#").main-arrow.main-arrow-up
+        a(href="#").main-arrow
             +icon('portf_arrow_up')
         include ../common/_footer
         .footer_copyright.maps_footer
