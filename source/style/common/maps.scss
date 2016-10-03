@@ -20,19 +20,13 @@
   color: #4272db;
 }
 
-.maps_container {
-  width: 100%;
-  height: 78%;
-  position: absolute;
-  top:0;
-}
 
 .maps_contacts {
   width: 380px;
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 50%;
-  transform: translateX(-50%)translateY(-50%);
+  transform: translateX(-50%);
   background: rgba(228, 233, 222, 0.8);
   border-radius: 5px;
   padding: 40px;
@@ -70,4 +64,5 @@
   background: rgba(50%, 66%, 44%, 0.7);
   position: relative;
   bottom: 214px;
+  box-sizing: border-box;
 }

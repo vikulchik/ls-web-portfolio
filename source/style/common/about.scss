@@ -20,7 +20,7 @@
   height: 17px;
   display: block;
   position: absolute;
-  bottom: 70px;
+  bottom: 75px;
   left: 50%;
   transform: translateX(-50%);
 
@@ -111,7 +111,7 @@
 .container_public {
   color: #566358;
   margin: auto auto 40px auto;
-  width: 255px;
+  width: 50%;
 
   &:after {
     background: #566358;

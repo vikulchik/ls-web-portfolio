@@ -1,6 +1,6 @@
 .nav-box {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -32,15 +32,16 @@
 }
 
 
-.nav-box_container {
-  text-align: center;
-  height: 35%;
+.nav-box_content {
   display: flex;
+  height: 100%;
 }
 
-.nav-box_list {
+.nav-box_container {
+  text-align: center;
   margin: auto;
 }
+
 .nav-box_item {
   list-style-type: none;
   margin-bottom: 90px;
