@@ -33,6 +33,7 @@
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 50.398855, lng: 30.624255},
     zoom: 14,
+    scrollwheel: false,
     styles:[
       {
         "featureType": "all",
