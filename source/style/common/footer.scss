@@ -6,6 +6,11 @@
   display: flex;
   justify-content: space-between;
 
+  @media screen and (max-width: 768px){
+    display: block;
+    padding: 20px;
+  }
+
   .icon {
     &:hover {
       fill: #ffffff;
@@ -21,12 +26,43 @@
   padding: 0 65px 45px 0;
   border-right: 1px solid #69716e;
   width: 35%;
+
+  @media screen and (max-width: 768px){
+    padding: 0 0 45px 0;
+  }
+  @media screen and (max-width: 425px){
+   // margin-bottom: 40px;
+  }
 }
 
 .footer_menu {
   padding: 0 30px 30px 30px;
   border-right: 1px solid #69716e;
-  width: 35%;
+  width: 40%;
+  @media screen and (max-width: 768px){
+    border-right: 0;
+    padding: 0 15px 15px 20px;
+    width: 55%;
+  }
+}
+
+.footer_menu, .footer_text {
+  @media screen and (max-width: 768px){
+    display: inline-block;
+  }
+
+  @media screen and (max-width: 425px){
+   display: block;
+    width: 100%;
+    border-right: 0;
+    border-bottom: 1px solid #69716e;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 320px){
+    padding: 0 0 15px 0;
+  }
 }
 
 .footer_list {
@@ -57,7 +93,15 @@
 .footer_quote {
   padding: 0 30px;
   width: 25%;
-}
+
+  @media screen and (max-width: 768px) {
+   width: 100%;padding: 0;
+  }
+
+  @media screen and (max-width: 425px){
+    text-align: center;
+  }
+  }
 
 .footer_quote-value {
   color: #b2b5b4;

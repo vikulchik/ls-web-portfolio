@@ -6,6 +6,10 @@
 .about-me {
   display: flex;
   height: 82%;
+
+  @media screen and (max-width: 320px){
+    padding: 0 10px;
+  }
 }
 
 .icon-box {
@@ -32,10 +36,6 @@
   }
 }
 
-.icon-about_bg_right{
-    fill: #f8f9f5;
-}
-
 .icon-about_bg_left{
   fill: #ebefe2;
 }
@@ -45,12 +45,24 @@
   justify-content: space-between;
   position: relative;
 
+  @media screen and (max-width: 768px){
+    display: block;
+  }
+
   &_left {
     background: #ebefe2;
     width: 50%;
     box-sizing: border-box;
     padding: 22px 80px;
     position: relative;
+
+    @media screen and (max-width: 768px){
+      width: 100%;
+    }
+
+    @media screen and (max-width: 425px){
+      padding: 0;
+    }
   }
 
   &_right {
@@ -59,6 +71,15 @@
     box-sizing: border-box;
     padding: 22px 15px 22px 40px;
     position: relative;
+
+    @media screen and (max-width: 768px){
+      width: 100%;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 425px){
+      padding: 15px 22px;
+    }
   }
 }
 
@@ -80,6 +101,12 @@
   transform: translateX(-50%);
   width: 355px;
   height: 255px;
+
+  @media screen and (max-width: 425px){
+    width: 70%;
+    top: -75px;
+    height: 220px;
+  }
 }
 
 .icon-about_header {
@@ -92,6 +119,10 @@
   width: 445px;
   height: 395px;
   margin: auto auto 40px auto;
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+  }
 }
 
 .container_img {
@@ -104,6 +135,10 @@
   margin: auto auto 40px auto;
   width: 50%;
 
+  @media screen and (max-width: 425px) {
+    width: 100%;
+  }
+
   &:after {
     background: #566358;
   }
@@ -114,11 +149,25 @@
   color: #566358;
   margin: auto auto 22px auto;
   line-height: 1.5;
+
+
+  @media screen and (max-width: 425px){
+    width: 90%;
+    padding: 0 10px 10px 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .container_right-text {
   width: 100%;
   margin-bottom: 60px;
+
+  @media screen and (max-width: 425px){
+    width: 100%;
+    text-align: left;
+  }
 }
 
 .skills {
@@ -136,6 +185,10 @@
   display: inline-block;
   margin-left: 40px;
   position: relative;
+
+  @media screen and (max-width: 425px){
+    margin-left: 5px;
+  }
 
   circle {
     transition: stroke-dasharray .8s;
@@ -213,11 +266,25 @@
   top: -142px;
   width: 50%;
   height: 200px;
+
+  @media screen and (max-width: 768px){
+    top: -120px;
+    fill:#ebefe2;
+  }
+
+  @media screen and (max-width: 375px){
+    top: -101px;
+  }
 }
 
 .icon-about_bg_right {
   right: 0;
   fill: #f4f5f0;
+  transform: rotateY(180deg);
+
+  @media screen and (max-width: 768px){
+    fill:#ebefe2;
+  }
 }
 
 .icon-about_bg_left {

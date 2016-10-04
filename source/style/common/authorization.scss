@@ -31,7 +31,7 @@
 
 .authorization_input {
   display: block;
-  width: 340px;
+  width: 100%;
   box-sizing: border-box;
   padding: 15px 30px 15px 65px;
   border: 0;
@@ -125,6 +125,10 @@
   display: block;
   border-radius: 3px;
 
+  @media screen and (max-width: 375px){
+    left: 75px;
+  }
+
   &:after {
     content: '';
     display: block;
@@ -215,12 +219,4 @@
   }
 }
 
-.authorization_list {
-  display: flex;
-  justify-content: space-between;
-}
 
-.authorization_item {
-  width: 50%;
-  text-align: center;
-}

@@ -1,0 +1,58 @@
+.swipe-sidebar {
+  width: 85%;
+  height: 90%;
+  background: #6c9c5a;
+  position: fixed;
+  top: 0;
+  left: -9999999px;
+  z-index: 1;
+  box-shadow: 3px 0 5px 1px rgba(0,0,0,0.35);
+  display: block;
+
+  .blog_nav-link {
+    color: #d3e1ce;
+  }
+
+  .active-link {
+    border-right: 0;
+    color: #ffffff;
+  }
+
+  .blog_nav {
+    position: absolute;
+    right: 25px;
+    top: 15%;
+    width: 90%;
+
+    @media screen and (max-width: 768px){
+      display: block;
+    }
+  }
+}
+
+.swipe-sidebar_link {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -999999px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #6c9c5a;
+  box-shadow: 6px 0 7px -2px rgba(0, 0, 0, 0.35);
+  display: block;
+  z-index: 1;
+
+  @media screen and (max-width: 320px){
+    left: -22px;
+  }
+}
+
+.open-menu {
+  top: 0;
+  left: 0;
+}
+
+.left-link {
+  left: 235px;
+}

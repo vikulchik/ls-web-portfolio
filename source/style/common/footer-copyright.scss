@@ -5,6 +5,10 @@
   box-sizing: border-box;
   bottom: 0;
   width: 100%;
+
+  @media screen and (max-width: 320px){
+    line-height: 2;
+  }
 }
 
 .footer_copyright-value {

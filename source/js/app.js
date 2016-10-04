@@ -1,5 +1,18 @@
 (function() {
 
+  // nav //
+
+  var navLink = document.querySelector('.swipe-sidebar_link'),
+      asideNav = document.querySelector('.swipe-sidebar');
+
+  navLink.addEventListener('click', function () {
+    asideNav.classList.toggle('open-menu');
+    this.classList.toggle('left-link');
+    this.style.transition = 1 + 's';
+  });
+
+  // end nav //
+
   // hamburger //
 
   var hamburger = document.querySelector('.hamburger'),
